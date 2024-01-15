@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int poly_func(int n,int &x, int a[], int i = 0){
+int poly_func(int n,int x, int a[], int i = 0){
     if (n==0){
         return a[i];
     }

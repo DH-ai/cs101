@@ -8,7 +8,7 @@ int poly_func(int n,int x, int a[], int i = 0){
         return a[i];
     }
     
-    return a[i]+ x*(poly_func(n-1,x,a,i++));
+    return a[i]+ x*(poly_func(n-1,x,a,++i));
 
 }
 int main (){

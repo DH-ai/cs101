@@ -3,13 +3,12 @@
 
 using namespace std;
 
-int poly_func(int n,int &x, int a[], int i = 0){
+int poly_func(int n,int x, int a[], int i = 0){
     if (n==0){
         return a[i];
     }
-    // printf("%d x",a[i]);
-    i++;
-    return a[i-1]+ x*(poly_func(n-1,x,a,i));
+    
+    return a[i]+ x*(poly_func(n-1,x,a,++i));
 
 }
 int main (){

@@ -6,9 +6,9 @@ int main (){
 
 
 
-	int n = 5;
+	int n ;
 
-
+	cin>>n;
 	int f= 1;
 	int t= 1;
 	repeat(n){

@@ -1,6 +1,7 @@
 #include <iostream>
 #include <ctime>
-
+#include<cstdlib>
+#include<unistd.h>
 using std::cin;
 using std::cout;
 
@@ -151,15 +152,15 @@ void simulation(){
     render(r, c, hx, hy, mx, my);
     cout << "Steps: " << steps << "\n";
     cin >> h;
-    //usleep(500);
+    usleep(5000);
   }
   
 }
 
 int main(){
 
-  //  array2d();
+    array2d();
     randomNumbers();
-    //simulation();
+    simulation();
   return 0;
 }
